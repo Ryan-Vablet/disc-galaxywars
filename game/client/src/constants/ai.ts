@@ -1,0 +1,43 @@
+import type { AIPersonality } from "@/types/ai";
+
+export const AI_PERSONALITIES: Record<"passive" | "balanced" | "aggressive", AIPersonality> = {
+  passive: {
+    name: "Passive",
+    decisionIntervalMs: 2500,
+    aggression: 0.2,
+    expansionism: 0.8,
+    caution: 0.6,
+    minimumSendThreshold: 800,
+    overpowerRatio: 1.8,
+    coordinatedAttacks: false,
+    staggerArrivals: false,
+    sunPriority: 0.3,
+    homeDefenseRatio: 0.5,
+  },
+  balanced: {
+    name: "Balanced",
+    decisionIntervalMs: 1800,
+    aggression: 0.5,
+    expansionism: 0.5,
+    caution: 0.4,
+    minimumSendThreshold: 400,
+    overpowerRatio: 1.3,
+    coordinatedAttacks: true,
+    staggerArrivals: false,
+    sunPriority: 0.6,
+    homeDefenseRatio: 0.3,
+  },
+  aggressive: {
+    name: "Aggressive",
+    decisionIntervalMs: 1200,
+    aggression: 0.8,
+    expansionism: 0.3,
+    caution: 0.2,
+    minimumSendThreshold: 200,
+    overpowerRatio: 1.0,
+    coordinatedAttacks: true,
+    staggerArrivals: true,
+    sunPriority: 0.9,
+    homeDefenseRatio: 0.15,
+  },
+};

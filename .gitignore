@@ -1,0 +1,20 @@
+# Dependencies & build
+node_modules/
+dist/
+*.tsbuildinfo
+coverage/
+.vite/
+game/client/dist/
+
+# Environment and secrets (never commit)
+.env
+.env.*
+!.env.example
+
+# OS and editor
+downloads/
+.DS_Store
+Thumbs.db
+*.log
+.cursor/
+.claude/
